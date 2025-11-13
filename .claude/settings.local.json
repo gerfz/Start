@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cat:*)",
+      "Bash(npx:*)",
+      "WebFetch(domain:github.com)",
+      "Bash(claude mcp add --help:*)",
+      "Bash(claude mcp add --scope user --transport stdio shadcn-ui-mcp-server npx -y @jpisnice/shadcn-ui-mcp-server)",
+      "Bash(claude mcp add:*)",
+      "mcp__shadcn-ui-mcp-server__get_component",
+      "Bash(tree:*)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:api.github.com)",
+      "Bash(curl:*)",
+      "Bash(for file in architecture-overview.md async-and-errors.md complete-examples.md configuration.md database-patterns.md middleware-guide.md routing-and-controllers.md sentry-and-monitoring.md services-and-repositories.md testing-guide.md validation-patterns.md)",
+      "Bash(do curl -s \"https://raw.githubusercontent.com/diet103/claude-code-infrastructure-showcase/main/.claude/skills/backend-dev-guidelines/resources/$file\" -o \"$file\")",
+      "Bash(done)",
+      "Bash(for file in common-patterns.md complete-examples.md component-patterns.md data-fetching.md file-organization.md loading-and-error-states.md performance.md routing-guide.md styling-guide.md typescript-standards.md)",
+      "Bash(do curl -s \"https://raw.githubusercontent.com/diet103/claude-code-infrastructure-showcase/main/.claude/skills/frontend-dev-guidelines/resources/$file\" -o \"$file\")",
+      "Bash(for file in SKILL.md TRIGGER_TYPES.md SKILL_RULES_REFERENCE.md HOOK_MECHANISMS.md TROUBLESHOOTING.md PATTERNS_LIBRARY.md ADVANCED.md)",
+      "Bash(do curl -s \"https://raw.githubusercontent.com/diet103/claude-code-infrastructure-showcase/main/.claude/skills/skill-developer/$file\" -o \"$file\")",
+      "Bash(find:*)",
+      "Bash(sort:*)",
+      "Bash(chmod:*)",
+      "Bash(npm install:*)",
+      "Bash(bash skill-activation-prompt.sh:*)",
+      "Bash(export CLAUDE_PROJECT_DIR=\"/mnt/c/Users/PC/Desktop/TestAI\")",
+      "Bash(bash:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
